@@ -13,6 +13,7 @@
 		C57D4F171ACF73D4002A8C58 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C57D4F161ACF73D4002A8C58 /* Images.xcassets */; };
 		C57D4F1A1ACF73D4002A8C58 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C57D4F181ACF73D4002A8C58 /* LaunchScreen.xib */; };
 		C57D4F261ACF73D4002A8C58 /* IntelliH20Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57D4F251ACF73D4002A8C58 /* IntelliH20Tests.swift */; };
+		C5A89C341AD0BD1C002EDD61 /* NRFManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A89C331AD0BD1C002EDD61 /* NRFManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		C57D4F1F1ACF73D4002A8C58 /* IntelliH20Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntelliH20Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C57D4F241ACF73D4002A8C58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C57D4F251ACF73D4002A8C58 /* IntelliH20Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntelliH20Tests.swift; sourceTree = "<group>"; };
+		C5A89C331AD0BD1C002EDD61 /* NRFManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRFManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				C57D4F111ACF73D4002A8C58 /* ViewController.swift */,
 				C57D4F131ACF73D4002A8C58 /* Main.storyboard */,
 				C57D4F161ACF73D4002A8C58 /* Images.xcassets */,
+				C5A89C331AD0BD1C002EDD61 /* NRFManager.swift */,
 				C57D4F181ACF73D4002A8C58 /* LaunchScreen.xib */,
 				C57D4F0D1ACF73D4002A8C58 /* Supporting Files */,
 			);
@@ -161,6 +164,7 @@
 				TargetAttributes = {
 					C57D4F091ACF73D4002A8C58 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = VRV5T6DHHR;
 					};
 					C57D4F1E1ACF73D4002A8C58 = {
 						CreatedOnToolsVersion = 6.2;
@@ -213,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C57D4F121ACF73D4002A8C58 /* ViewController.swift in Sources */,
+				C5A89C341AD0BD1C002EDD61 /* NRFManager.swift in Sources */,
 				C57D4F101ACF73D4002A8C58 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,9 +341,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = IntelliH20/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -346,9 +354,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = IntelliH20/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -405,6 +416,7 @@
 				C57D4F2B1ACF73D4002A8C58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C57D4F2C1ACF73D4002A8C58 /* Build configuration list for PBXNativeTarget "IntelliH20Tests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +425,7 @@
 				C57D4F2E1ACF73D4002A8C58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
